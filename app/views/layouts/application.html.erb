@@ -11,10 +11,10 @@
 
   <body class="d-flex flex-column">
     <%= render 'layouts/navbar' %>
-    <div class="page-content">
+    <div id="page-content">
       <%= render 'layouts/flash_message' %>
       <%= yield %>
-      <%= render 'layouts/footer' %>
     </div>
+    <%= render 'layouts/footer' %>
   </body>
 </html>
