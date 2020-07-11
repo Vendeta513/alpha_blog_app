@@ -27,7 +27,13 @@ class UsersController < ApplicationController
     else
       render 'edit'
     end
+  end
 
+  def destroy
+    if @user.destroy
+      flash[:notice] = "User successfully deleted"
+      redirect_to root_path
+    end
   end
 
 
